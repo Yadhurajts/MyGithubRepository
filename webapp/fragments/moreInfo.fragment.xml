@@ -13,6 +13,8 @@
             <Text text="{To_Supplier/BP_ID}"></Text>
             <Label text="Supplier Name"></Label>
             <Text text="{To_Supplier/COMPANY_NAME}"></Text>
+            <Label text="Email"></Label>
+            <Text text="{To_Supplier/EMAIL_ADDRESS}"></Text>
             <Label text="Location"></Label>
             <Text text="{To_Supplier/CITY}, {To_Supplier/COUNTRY}"></Text>
         </f:content>
