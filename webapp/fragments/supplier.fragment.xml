@@ -27,6 +27,11 @@
                     <Label text="Email Address"></Label>
                 </header>
             </Column>
+            <Column minScreenWidth="Tablet">
+                <header>
+                    <Label text="Role"></Label>
+                </header>
+            </Column>
         </columns>
         <items>
             <ColumnListItem type="Navigation">
@@ -35,6 +40,7 @@
                     <Input value="{CITY}" showValueHelp="true" valueHelpRequest="onF4Help"></Input>
                     <Text text="{COUNTRY}"></Text>
                     <Text text="{EMAIL_ADDRESS}"></Text>
+                    <Text text="{BP_ROLE}"></Text>
                 </cells>
             </ColumnListItem>
         </items>

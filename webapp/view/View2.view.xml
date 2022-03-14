@@ -14,7 +14,7 @@
                     <IconTabFilter icon="sap-icon://supplier" text="Suppliers">
                         <core:Fragment fragmentName="tcs.fin.ap.fragments.supplier" type="XML"></core:Fragment>
                     </IconTabFilter>
-                    <IconTabFilter icon="sap-icon://home" text="Cities">
+                    <IconTabFilter icon="sap-icon://activities" text="Cities">
                         <core:Fragment fragmentName="tcs.fin.ap.fragments.cities" type="XML"></core:Fragment>
                     </IconTabFilter>
                 </items>

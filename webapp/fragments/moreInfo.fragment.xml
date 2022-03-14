@@ -6,6 +6,8 @@
             <Text text="{PRODUCT_ID}"></Text>
             <Label text="Name"></Label>
             <Text text="{NAME}"></Text>
+            <Label text="Category"></Label>
+            <Text text="{CATEGORY}"></Text>
             <Label text="Price"></Label>
             <Text text="{PRICE} {CURRENCY_CODE}"></Text>
             <core:Title text="Suppliers"></core:Title>
