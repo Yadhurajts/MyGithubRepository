@@ -1,0 +1,12 @@
+specVersion: '2.6'
+metadata:
+  name: fiorilikeapp
+type: application
+server:
+  customMiddleware:
+    - name: fiori-tools-proxy
+      afterMiddleware: compression
+      configuration:
+        backend:
+        - path: /sap
+          url: http://s4dev.st.com:8021/

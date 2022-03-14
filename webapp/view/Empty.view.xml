@@ -1,0 +1,8 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" 
+    controllerName="tcs.fin.ap.controller.Empty">
+    <Page title="Welcome to App">
+        <content>
+            <Image width="100%" height="100%" src="https://images.squarespace-cdn.com/content/v1/51b3dc8ee4b051b96ceb10de/1524411460420-R8Z2PZ4XY6OCK2OTF811/image-asset.jpeg"></Image>
+        </content>
+    </Page>
+</mvc:View>

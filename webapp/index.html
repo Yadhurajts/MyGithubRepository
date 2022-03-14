@@ -1,0 +1,28 @@
+<html>
+    <head>
+
+        <script src="https://sapui5.hana.ondemand.com/1.90.0/resources/sap-ui-core.js"
+                data-sap-ui-libs="sap.m"
+                data-sap-ui-theme="sap_fiori_3_dark"
+                data-sap-ui-bindingSyntax="complex"
+                data-sap-ui-resourceroots='{
+                    "tcs.fin.ap": "./"
+                }'>
+
+        </script>
+
+        <script>
+
+            var oCompContainer = new sap.ui.core.ComponentContainer({
+                name: "tcs.fin.ap"
+            });
+
+            oCompContainer.placeAt("content");
+            
+        </script>
+
+    </head>
+    <body class="sapUiBody">
+        <div id="content"></div>
+    </body>
+</html>

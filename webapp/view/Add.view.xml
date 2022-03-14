@@ -1,0 +1,69 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" 
+    xmlns:core="sap.ui.core" xmlns:f="sap.ui.layout.form"
+    xmlns:l="sap.ui.layout"
+    controllerName="tcs.fin.ap.controller.Add">
+    <Page title="Manage Product">
+        <content>
+           <VBox class="sapUiSmallMargin">
+		        <f:SimpleForm id="SimpleFormChange354"
+			        editable="true"
+			        layout="ResponsiveGridLayout"
+			        title="Product"
+			        labelSpanXL="3"
+			        labelSpanL="3"
+			        labelSpanM="3"
+			        labelSpanS="12"
+			        adjustLabelSpan="false"
+			        emptySpanXL="4"
+			        emptySpanL="4"
+			        emptySpanM="4"
+			        emptySpanS="0"
+			        columnsXL="1"
+			        columnsL="1"
+			        columnsM="1"
+			        singleContainerFullSize="false" >
+			        <f:content>
+				        <Label text="Product Id" />
+				        <Input id="name" value="{local>/productData/PRODUCT_ID}" submit="onSubmit" />
+                        <Button icon="sap-icon://money-bills" tooltip="Get Most Expensive Product" press="onLoadExp"></Button>
+				        <Label text="Name/Description" />
+				        <Input value="{local>/productData/NAME}">
+				        </Input>
+				        <Input value="{local>/productData/DESCRIPTION}">
+					        <layoutData>
+						        <l:GridData span="XL1 L2 M2 S4" />
+					        </layoutData>
+				        </Input>
+                        <Label text="Supplier Id" />
+				        <Input value="{local>/productData/SUPPLIER_ID}" showValueHelp="true" valueHelpRequest="onF4Supplier">
+				        </Input>
+                        <Text text="{local>/SUPPLIER_NAME}"></Text>
+				        <Label text="Price/Currency" />
+				        <Input value="{local>/productData/PRICE}">
+					        <layoutData>
+						        <l:GridData span="XL1 L2 M2 S4" />
+					        </layoutData>
+				        </Input>
+				        <Input value="{local>/productData/CURRENCY_CODE}" />
+				        <Label text="Category" />
+				        <Select id="category" selectedKey="{local>/productData/CATEGORY}">
+					        <items>
+						        <core:Item text="Notebooks" key="Notebooks"/>
+						        <core:Item text="Mice" key="Mice"/>
+						        <core:Item text="Projectors" key="Projectors"/>
+					        </items>
+				        </Select>
+			        </f:content>
+		        </f:SimpleForm>
+	        </VBox>
+        </content>
+        <footer>
+            <Toolbar>
+                <ToolbarSpacer />
+                <Button id="idSave" text="Save" type="Accept" press="onSave" ></Button>
+                <Button id="idDelete" text="Delete" enabled="false" type="Reject" press="onDelete" ></Button>
+                <Button text="Clear" type="Emphasized" press="onClear" ></Button>
+            </Toolbar>
+        </footer>
+    </Page>
+</mvc:View>
