@@ -9,4 +9,4 @@ server:
       configuration:
         backend:
         - path: /sap
-          url: http://s4dev.st.com:8021/
+          url: http://103.207.171.202:8021
