@@ -1,12 +1,12 @@
 sap.ui.define([
     'sap/ui/core/UIComponent'
-], function(UIComponent) {
+], function (UIComponent) {
     'use strict';
-    return UIComponent.extend("tcs.fin.ap.Component",{
+    return UIComponent.extend("tcs.fin.ap1.Component", {
         metadata: {
             manifest: "json"
         },
-        init: function(){
+        init: function () {
             //like constructor of our component class
             //here we call the base class constructor super->constructor()
             sap.ui.core.UIComponent.prototype.init.apply(this);
@@ -16,7 +16,7 @@ sap.ui.define([
             oRouter.initialize();
         },
         // createContent: function(){
-            
+
         //     var oAppView = new sap.ui.view({
         //         id: "idAppView",
         //         viewName: "tcs.fin.ap.view.App",
@@ -45,7 +45,7 @@ sap.ui.define([
         //     return oAppView;
 
         // },
-        destroy: function(){
+        destroy: function () {
 
         }
     });

@@ -1,11 +1,11 @@
 sap.ui.define([
     'tcs/fin/ap/controller/BaseController'
-], function(BaseController) {
+], function (BaseController) {
     'use strict';
-    return BaseController.extend("tcs.fin.ap.controller.App",{
+    return BaseController.extend("tcs.fin.ap1.controller.App", {
         //This is our app controller 😊
-        onInit: function(){
-            
+        onInit: function () {
+
         }
     });
 });

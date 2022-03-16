@@ -4,7 +4,7 @@ sap.ui.define([
     'sap/ui/model/FilterOperator'
 ], function (BaseController, Filter, FilterOperator) {
     'use strict';
-    return BaseController.extend("tcs.fin.ap.controller.View1", {
+    return BaseController.extend("tcs.fin.ap1.controller.View1", {
         //This is our app controller 😊
         onInit: function () {
             //Get the object of Component.js and from there get the object of Router

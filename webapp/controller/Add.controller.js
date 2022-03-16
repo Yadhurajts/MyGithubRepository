@@ -6,7 +6,7 @@ sap.ui.define([
     'sap/ui/core/Fragment'
 ], function (BaseController, JSONModel, MessageBox, MessageToast, Fragment) {
     'use strict';
-    return BaseController.extend("tcs.fin.ap.controller.Add", {
+    return BaseController.extend("tcs.fin.ap1.controller.Add", {
         //This is our app controller 😊
         onInit: function () {
             var oModel = new JSONModel();

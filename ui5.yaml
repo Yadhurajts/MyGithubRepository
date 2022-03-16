@@ -2,6 +2,10 @@ specVersion: '2.6'
 metadata:
   name: fiorilikeapp
 type: application
+builder:
+  resources:
+    excludes:
+      - index.html
 server:
   customMiddleware:
     - name: fiori-tools-proxy

@@ -1,7 +1,7 @@
 <mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" 
     xmlns:core="sap.ui.core" xmlns:f="sap.ui.layout.form"
     xmlns:l="sap.ui.layout"
-    controllerName="tcs.fin.ap.controller.Add">
+    controllerName="tcs.fin.ap1.controller.Add">
     <Page title="Manage Product">
         <content>
            <VBox class="sapUiSmallMargin">

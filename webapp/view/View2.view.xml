@@ -1,6 +1,6 @@
 <mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:f="sap.ui.layout.form"
           xmlns:core="sap.ui.core"
-          controllerName="tcs.fin.ap.controller.View2">
+          controllerName="tcs.fin.ap1.controller.View2">
     <Page title="View 2" showNavButton="true" navButtonPress="onBack">
         <content>
             <!-- <Button text="Back" press="onBack"></Button> -->

@@ -1,7 +1,7 @@
 {
     "_version": "1.33.0",
     "sap.app": {
-        "id": "tcs.fin.ap",
+        "id": "tcs.fin.ap1",
         "type": "application",
         "i18n": "i18n/i18n.properties",
         "applicationVersion": {
@@ -50,7 +50,7 @@
             }
         },
         "rootView": {
-            "viewName": "tcs.fin.ap.view.App",
+            "viewName": "tcs.fin.ap1.view.App",
             "type": "XML",
             "id": "idAppView"
         },

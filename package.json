@@ -1,20 +1,28 @@
 {
-  "name": "fiorilikeapp",
-  "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
-  "ui5": {
-    "dependencies": [
-      "@sap/ux-ui5-tooling"
-    ]
-  },
-  "description": "",
-  "dependencies": {
-    "@sap/ux-ui5-tooling": "^1.5.1",
-    "@ui5/cli": "^2.14.6"
-  }
+    "name": "fiorilikeapp",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "build": "ui5 build",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "deploy": "npm run build && fiori deploy --config ui5-deploy.yaml && rimraf archive.zip",
+        "undeploy": "fiori undeploy --config ui5-deploy.yaml",
+        "deploy-test": "npm run build && fiori deploy --config ui5-deploy.yaml --testMode true"
+    },
+    "author": "",
+    "license": "ISC",
+    "ui5": {
+        "dependencies": [
+            "@sap/ux-ui5-tooling"
+        ]
+    },
+    "description": "",
+    "dependencies": {
+        "@sap/generator-fiori": "^1.5.1",
+        "@sap/ux-ui5-tooling": "^1.5.1",
+        "@ui5/cli": "^2.14.6"
+    },
+    "devDependencies": {
+        "rimraf": "3.0.2"
+    }
 }

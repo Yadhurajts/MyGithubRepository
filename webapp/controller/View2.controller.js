@@ -7,7 +7,7 @@ sap.ui.define([
     'sap/ui/model/FilterOperator'
 ], function (BaseController, MessageBox, MessageToast, Fragment, Filter, FilterOperator) {
     'use strict';
-    return BaseController.extend("tcs.fin.ap.controller.View2", {
+    return BaseController.extend("tcs.fin.ap1.controller.View2", {
         //This is our app controller 😊
         onInit: function () {
             this.oRouter = this.getOwnerComponent().getRouter();
